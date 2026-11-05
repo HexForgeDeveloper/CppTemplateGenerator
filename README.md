@@ -2,11 +2,16 @@
 
 ![C++ Template Generator demonstration](Resources/CPPGenerator.gif)
 
-UE 5.5 editor plugin providing a configurable shortcut to Unreal's standard C++ class wizard.
+Unreal Engine editor plugin providing a configurable shortcut to Unreal's standard C++ class wizard.
 
 ## Requirements and installation
 
-Validated configuration: Unreal Engine 5.5, Windows x64, and a compatible Visual Studio C++ toolchain with Windows SDK. Other engine versions and platforms have not been verified. This is an editor-only plugin.
+This is an editor-only plugin for Unreal Engine 5. Compatibility is maintained in engine-specific branches as new engine versions are supported.
+
+- `5.5`: available and validated on Windows x64.
+- `5.6`, `5.7` and later: planned; availability and validation will be documented when each version branch is published.
+
+`main` is the development branch. Use the branch matching your project's Unreal Engine version. Precompiled packages must also match the engine version and platform. A compatible Visual Studio C++ toolchain with Windows SDK is required for source builds and class generation.
 
 Close Unreal Editor, copy the complete `CppTemplateGenerator` folder into `<YourProject>/Plugins/`, then reopen the project and enable **C++ Template Generator** under Edit > Plugins. Restart when prompted. Keep only one installed copy of the plugin across the project and engine directories.
 
